@@ -6,7 +6,7 @@ public class WeeklyTemps
 	public double getMax(double [] temps)
 	{
 		double max = temps[0];
-		for(int i = 0; i < temps.length - 1; i++)
+		for(int i = 0; i < temps.length; i++)
 		{
 			if(max <= temps[i])
 			{
@@ -19,7 +19,7 @@ public class WeeklyTemps
 	public double getMin(double[] temps)
 	{
 		double min = temps[0];
-		for(int i = 0; i < temps.length - 1; i++)
+		for(int i = 0; i < temps.length; i++)
 		{
 			if(min >= temps[i])
 			{
@@ -41,7 +41,7 @@ public class WeeklyTemps
 	public double getMean(double[] temps)
 	{
 		double mean = 0;
-		for(int i = 0; i < temps.length - 1; i++)
+		for(int i = 0; i < temps.length; i++)
 		{
 			mean += temps[i];
 		}
